@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <script defer src="js/myscript.js"></script>
+    <script defer src="js/myheader.js"></script>
+    <script defer src="js/contact.js"></script>
+    <title>Jurell Afable | Contacts</title>
+</head>
+<body>
+    <div class="image1">
+        <img src="assets/medrama.png" alt="jurell afable" draggable="false">
+    </div>
+    <header id="myHeader">
+        <script> loadHeader() </script> <!-- Include the header using JavaScript -->
+        <script>navburger()</script>
+    </header>
+    
+    <div class="contact-content">
+        <h3>Contact</h3>
+            <div class="upper-div"><!-- so upper div will be like the container para ma flex an content-->
+                <div class="location">
+                    <img src="assets/locicon.png" alt=""> 
+                    <h2>Address</h2>
+                    <p>Mandaluyong City, Metro Manila</p>
+                </div>
+            <div class="social-media">
+                <h2>Social Media</h2>
+                <div class="gg-share share-pos"></div>
+                <div class="facebook-icon">
+                    <a class="gg-facebook" href="https://www.facebook.com/j.Afbl"></a>
+                </div>
+                <div class="instagram-icon">
+                    <a class="gg-instagram" href="https://www.instagram.com/j.afble/"></a>
+                </div>
+                <div class="github-sign"><a href="https://github.com/afbl-11">Github</a></div>
+            </div><!-- INsert below new div-->
+            
+    </div>
+    <div class="lower-div"><!--liwat dinhi butngi hin flex-->
+        <div class="email">
+            <div class="gg-mail mail-pos"></div>
+            <h2>Email</h2>
+            <p onclick="copyText(this)">jurell02afable@gmail.com</p>
+        </div>
+        <div class="phoneNumPad">
+            <div class="gg-smartphone phone-pos"></div>
+            <h2>Phone Number</h2>
+            <pre onclick="copyText(this)">09763190715     |     09276422011</pre>
+          </div>
+          
+    </div>
+
+    <div class="contact-form">
+        <form>
+           <div class="upper-forms">
+                <div class="form-name">
+                    <div class="input-wrapper">
+                    <input type="text" id="fullname" name="fullname" required="required">
+                    <label for="fullname">Full name</label>
+                    </div>
+                </div>
+
+                <div class="email-form">
+                    <div class="email-wrapper">
+                        <input type="email" id="submitEmail" name="Email" required="required">
+                        <label for="submitEmail">Email</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subject-form" >
+                <div class="subject-wrapper">
+                    <input type="text" id="subject" name="subject">
+                    <label for="subject">Subject</label>
+                </div>
+            </div>
+
+            <div class="message-area">
+                <div class="message-wrapper">
+                    <input type="text" id="message" name="message">
+                    <label for="message">Message</label>
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Send" class="submitbtn">
+            </div>
+        </form>
+    </div>
+    <footer>
+
+    </footer>
+   
+</body>
+</html>

@@ -1,0 +1,220 @@
+*{
+   
+    box-sizing: border-box;
+  }
+.content
+{
+    display: grid;
+}
+
+h2
+{
+    margin-left: 5rem;
+    margin-top: 7rem;
+    border-bottom: 2px solid #bcbcbc;
+    color:  #18d26e;
+    margin-right: 63rem;
+    padding-bottom: 1ex;
+}
+h2:hover
+{
+    font-size: 2em;
+    transition: 0.8s ease-in-out;
+}
+#webH
+{
+    margin-top: 3rem;
+}
+#CppH
+{
+    margin-bottom: 2rem;
+}
+#graphicH
+{
+    margin-top: 3rem;
+}
+
+footer{
+    padding: 5rem;
+}
+
+.projectShelf
+{
+    position: relative;
+    left: 5rem;
+    top: 5rem;
+    width: 87%;
+    border-radius: 16px;
+   
+    padding: 2rem;
+    
+}
+
+.cppProjShelf
+{
+    border-radius: 16px;
+    background-color: rgba(45, 44, 44, 0.5);
+    padding: 3rem;
+}
+.webdesProj
+{
+    margin-top: 3rem;
+    border-radius: 16px;
+    background-color: rgba(45, 44, 44, 0.5);
+    padding: 3rem;
+}
+
+.graphic-des-wrapper
+{
+    margin-top: 3rem;
+    border-radius: 16px;
+    background-color: rgba(45, 44, 44, 0.5);
+    padding: 3rem;
+}
+
+/*===============carousel ==============*/
+ 
+     .wrapper{
+       display: flex;
+       position: relative;
+       
+     }
+     .wrapper i{
+       top: 50%;
+       height: 44px;
+       width: 44px;
+       color: #343F4F;
+       cursor: pointer;
+       font-size: 1.15rem;
+       position: absolute;
+       text-align: center;
+       line-height: 44px;
+       background: #bcbcbc;
+       border-radius: 50%;
+       transform: translateY(-50%);
+       transition: transform 0.1s linear;
+     }
+     .wrapper i:active{
+       transform: translateY(-50%) scale(0.9);
+     }
+     .wrapper i:hover{
+       background: #18d26e;
+     }
+     .wrapper i:first-child{
+       left: -22px;
+       display: none;
+     }
+     .wrapper i:last-child{
+       right: -22px;
+     }
+     .wrapper .carousel{
+       font-size: 0px;
+       cursor: pointer;
+       overflow: hidden;
+       white-space: nowrap;
+       scroll-behavior: smooth;
+     }
+     .carousel.dragging{
+       cursor: grab;
+       scroll-behavior: auto;
+     }
+     .carousel.dragging img{
+       pointer-events: none;
+     }
+     .carousel img{
+       height: 340px;
+       object-fit: cover;
+       user-select: none;
+       margin-left: 14px;
+       width: calc(100% / 2);
+       
+     }
+     .carousel img:first-child{
+       margin-left: 2.5rem;
+       margin-right: 2.5rem;
+       border-radius: 12px;
+     }
+     .carousel img:hover{
+        opacity: 0.5;
+     }
+     
+    
+     @media screen and (max-width: 900px) {
+       .carousel img
+       {
+         width: calc(100% / 2);
+       }
+       
+     }
+     
+     @media screen and (max-width: 550px) {
+       .carousel img
+       {
+         width: 100%;
+         
+       }
+    
+     }
+     /* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  /* Hide the navigation menu by default */
+  .nav-container ul {
+    display: none;
+  }
+
+  /* Display the hamburger menu */
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+  @media only screen and (max-width: 480px) {
+    /* Adjust the styles for screens with a maximum width of 480px */
+    body 
+    {
+      overflow-y: hidden;
+    }
+    header {
+      margin-top: 10rem;
+      margin-left: 1rem;
+    }
+    
+    .image1 img {
+      position: absolute;
+      width: 500px;
+      height: 900px;
+      left: 2rem;
+     bottom: -5rem;
+    }
+    .nav-container
+    {
+      position: absolute;
+      bottom: 10rem;
+    }
+    .nav-container ul {
+      opacity: 0;
+      display: none;
+      position: absolute;
+      top: -3rem;
+      left: -1rem;
+      background-color: rgba(80, 74, 74, 0.5);
+      border-radius: 16px;
+      animation: fade-in 0.5s forwards;
+  }
+   
+     #name h1 {
+    font-size: 2rem; 
+    margin-bottom: 2rem;
+  }
+}
+    #subheader2
+    {
+      font-size: medium;
+      margin-bottom: 1rem;
+    }
+    #subheader3
+    {
+      font-size: medium;
+    }
+    /* Adjust other styles as needed for smaller screens */
+  

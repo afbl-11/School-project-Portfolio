@@ -1,0 +1,245 @@
+/*========== Facebook icon ===========*/
+.gg-facebook {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 20px;
+    height: 20px
+   }
+   
+   .gg-facebook::after,
+   .gg-facebook::before {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box
+   }
+   
+   .gg-facebook::before {
+    width: 8px;
+    height: 20px;
+    border-left: 4px solid;
+    border-top: 4px solid;
+    border-top-left-radius: 5px;
+    left: 6px
+   }
+   
+   .gg-facebook::after {
+    width: 10px;
+    height: 4px;
+    background: currentColor;
+    top: 7px;
+    left: 4px;
+    transform: skew(-5deg)
+   } 
+
+   /*=========== Instagram Icon ============*/
+   .gg-instagram {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px
+   }
+   
+   .gg-instagram::after,
+   .gg-instagram::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+   }
+   
+   .gg-instagram::after {
+    border: 2px solid;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    top: 3px
+   }
+   
+   .gg-instagram::before {
+    border-radius: 3px;
+    width: 2px;
+    height: 2px;
+    background: currentColor;
+    right: 1px;
+    top: 1px
+   } 
+
+   /*======== Share button ===========*/
+   .gg-share {
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 6px;
+    color: #18d26e;
+    height: 6px;
+    background: currentColor;
+    border-radius: 100px;
+    box-shadow:
+    10px -6px 0,
+    10px 6px 0
+   }
+   
+   .gg-share::after,
+   .gg-share::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+    left: 2px
+   }
+   
+   .gg-share::before {
+    top: 0;
+    transform: rotate(-35deg)
+   }
+   
+   .gg-share::after {
+    bottom: 0;
+    transform: rotate(35deg)
+   } 
+
+   /*============ Mail icon ================*/
+   .gg-mail,
+   .gg-mail::after {
+    display: block;
+    box-sizing: border-box;
+    height: 14px;
+    border: 2px solid
+   }
+   
+   .gg-mail {
+    overflow: hidden;
+    transform: scale(var(--ggs,1));
+    position: absolute;
+    width: 18px;
+    border-radius: 2px
+   }
+   
+   .gg-mail::after {
+    content: "";
+    position: absolute;
+    border-radius: 3px;
+    width: 14px;
+    transform: rotate(-45deg);
+    bottom: 3px;
+    left: 0
+   } 
+
+   /*======== Phone icon ============*/
+   .gg-smartphone {
+    background:
+    linear-gradient(to left,
+    currentColor 5px,transparent 0)
+    no-repeat 4px 12px/2px 2px;
+    box-sizing: border-box;
+    color: #18d26e;
+    position: absolute;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 14px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 2px;
+    } 
+     /*=============== left icon ================*/
+   .gg-chevron-left {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    color: black;
+    left: 1rem;
+    top: 0.9rem;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px
+   }
+   
+   .gg-chevron-left::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    transform: rotate(45deg);
+    left: 6px;
+    top: 4px
+   } 
+   /*=========================right icon ====================*/
+   .gg-chevron-right {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    color: black;
+    left: 0.8rem;
+    top: 0.9rem;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    z-index: 1;
+   }
+   
+   .gg-chevron-right::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolue;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(-45deg);
+    right: 6px;
+    top: 4px
+   } 
+
+   /*=============close icon===============*/
+   .gg-close {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    transition: 2s;
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 40px
+   }
+   
+   .gg-close::after,
+   .gg-close::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background: currentColor;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    top: 8px;
+    left: 1px
+   }
+   
+   .gg-close::after {
+    transform: rotate(-45deg)
+   } 

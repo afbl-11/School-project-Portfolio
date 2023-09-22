@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marc Jurell Afable">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="https://drive.google.com/uc?export=view&id=1E3Sues8KRoMwMI2dFmN9bumaJVtnvZ57" type="image/x-icon">
+    <title>Honda Cars Kingdom of Pelepens</title>
+    <style>
+
+#cardbox
+{
+    margin:5rem;
+    box-shadow:0 .5rem 1rem rgb(0 0 0/15%)!important
+}
+#pic-container
+{
+    margin-left: 10rem;
+    margin-top: 10rem;
+    
+}
+a:hover
+{
+    border-bottom: 2px solid red;
+    color: white;
+}
+.container .navbar-brand
+{
+    border-bottom: none;
+}
+.nav-item a h5:hover {
+  color: red;
+}
+#btn3, #btn2, #btn1
+{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+.footer-area {
+    display: flex;
+   
+  }
+
+  #insta, #twitter {
+    margin-top: 2rem;
+    margin-right: 2rem; 
+    margin-left: 1rem;
+  }
+  #insta a:hover,
+  #twitter a:hover {
+    border-bottom: none;
+  }
+  
+  .card-footer p {
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+    margin-left: 1rem;
+  }
+  #price1,#price2,#price3
+  {
+    margin-left: 2rem;
+    font-weight: bold;
+  }
+    </style>
+</head>
+<body>
+   <!--Navagation bar-->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-lg-top">
+    <div class="container">
+        <a href="#" class="navbar-brand"><img src="data:image/png;base64,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" alt="" style="width: 200px;"></a>
+        
+        <button class="navbar-toggler  "
+         type="button"
+        data-bs-toggle="collapse" 
+        data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+                <a href="#models" class="nav-link text-white " id="nav1"><h5>Models</h5></a>
+             </li>
+             <li class="nav-item">
+                <a href="#Offers" class="nav-link text-white "id="nav2"><h5>Offers</h5></a>
+             </li>
+             <li class="nav-item">
+                <a href="#Customer Tools" class="nav-link text-white"id="nav3"><h5>Customer Tools</h5></a>
+             </li>
+             <li class="nav-item">
+               <a href="#Service" class="nav-link text-white"id="nav4"><h5>Service</h5></a>
+            </li>
+            <li class="nav-item">
+               <a href="#discover" class="nav-link text-white"id="nav5"><h5>Discover</h5></a>
+            </li>
+        </ul>
+       </div> 
+    </div>
+  </nav>
+ <!--Main section of page-->
+ <main>
+   <div id="cardbox" >
+      <div class="card-group ">
+         <div class="card">
+           <img src="https://hondaphil.com/app/default/files-module/local/car_media/model-sliders-design-ext-type-r-23-01.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h4 class="card-title">Honda Civic Type R</h4>
+             <p class="card-text"> <h5>A FUSION OF FUNCTION AND FORM</h5>
+
+               The All-New Civic Type R features sleek, aerodynamic styling which epitomizes Type R’s unique character and Honda’s sporty DNA. With a lower and wider stance, The All-New Civic Type R is sure to make heads turn and hearts race with exhilaration.
+            </p>
+           </div>
+           <div id="price1">
+            <p class="text-danger" > Php 3,880,000</p>
+           </div>
+           <button type="button" class="btn btn-danger" id="btn1">Inquire Now</button>
+         </div>
+         <div class="card" id="middle-img">
+           <img src="https://hondaphil.com/app/default/files-module/local/car_gallery/model-main-banner-hr-v-23.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h4 class="card-title">Honda HR-V</h4>
+             <p class="card-text"> <h5>SENSE OF PERFORMANCE</h5>
+
+               Feel the rush of the VTEC Turbo* engine with quick acceleration — great for overtaking and driving on highways. Being the first HR-V with a turbo engine, it gives a strong power output and torque without compromising fuel efficiency. Refined with the latest technology, the CVT features less friction and step-up shift control for a fun driving experience as well as a low fuel consumption. 
+            </p>
+           </div>
+           <div id="price2">
+            <p class="text-danger" > Php 1,389,000</p>
+           </div>
+           <button type="button" class="btn btn-danger" id="btn2" >Inquire Now</button>
+         </div>
+         <div class="card">
+           <img src="https://hondaphil.com/app/default/files-module/local/car_gallery/model-main-banner-city.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h4 class="card-title">Honda City</h4>
+             <p class="card-text"> <h5>Ready To Cruise</h5>
+
+               Take helm inside the cockpit of the Honda City, and be greeted with luxurious comfort and advanced controls within your reach, so you can ease back and relax.
+            </p>
+              
+           </div>
+           <div id="price3">
+            <p class="text-danger" > Php 953,000</p>
+           </div>
+           <button type="button" class="btn btn-danger " id="btn3">Inquire Now</button>
+         </div>
+       </div>
+       
+ </main>
+ <footer class="card-footer bg-dark  p-lg-2 p-4">
+  <div class="footer-area">
+   <div id="insta">
+      <a href="#insta"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+         <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+       </svg></a>
+   </div>
+   <div id="twitter">
+      <a href="#twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-twitter" viewBox="0 0 16 16">
+         <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+       </svg></a>
+   </div>
+  </div>
+  <div class="copyrights">
+   <p>Kapyright © 2023 Honda Cars Kingdom of Pelepens, Inc. All Rights Reserved.</p>
+  </div>
+ </footer>
+ 
+    
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script>
+   // Button 1
+document.getElementById("btn1").addEventListener("click", function() {
+  confirmAndRedirect("Are you sure you want to leave this page?");
+});
+
+// Button 2
+document.getElementById("btn2").addEventListener("click", function() {
+  confirmAndRedirect("Are you sure you want to leave this page?");
+});
+
+// Button 3
+document.getElementById("btn3").addEventListener("click", function() {
+  confirmAndRedirect("Are you sure you want to leave this page?");
+});
+
+// Navbar Link 1
+document.getElementById("nav1").addEventListener("click", function(event) {
+  confirmAndRedirect("Webpage inaccesible due to system mentainance. Sorry for the inconvenience!");
+  event.preventDefault(); 
+});
+
+// Navbar Link 2
+document.getElementById("nav2").addEventListener("click", function(event) {
+  confirmAndRedirect("Webpage inaccesible due to system mentainance. Sorry for the inconvenience!");
+  event.preventDefault(); 
+});
+
+// Navbar Link 3
+document.getElementById("nav3").addEventListener("click", function(event) {
+  confirmAndRedirect("Webpage inaccesible due to system mentainance. Sorry for the inconvenience!");
+  event.preventDefault(); 
+});
+
+// Navbar Link 4
+document.getElementById("nav4").addEventListener("click", function(event) {
+  confirmAndRedirect("Webpage inaccesible due to system mentainance. Sorry for the inconvenience!");
+  event.preventDefault(); 
+});
+
+// Navbar Link 5
+document.getElementById("nav5").addEventListener("click", function(event) {
+  confirmAndRedirect("Webpage inaccesible due to system mentainance. Sorry for the inconvenience!");
+  event.preventDefault(); 
+});
+
+function confirmAndRedirect(message) {
+  var confirmation = confirm(message);
+
+  if (confirmation) {
+    //no condition
+  } else {
+    //no condition
+  }
+}
+
+
+  //Social media links
+
+  //  Instagram Link
+  document.getElementById("insta").addEventListener("click", function(event) {
+    confirmConnection(event, "Instagram");
+  });
+
+  //  Twitter Link
+  document.getElementById("twitter").addEventListener("click", function(event) {
+    confirmConnection(event, "Twitter");
+  });
+
+  function confirmConnection(event, socialMedia) {
+    var confirmation = confirm("Do you want to connect your " + socialMedia + " account?");
+
+    if (!confirmation) {
+      event.preventDefault(); 
+    }
+  }
+      </script>
+</body>
+</html>
+
+

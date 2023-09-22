@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400&family=Open+Sans:ital,wght@1,300&family=Roboto+Condensed:ital@1&family=Roboto:wght@900&family=Ubuntu:wght@500&display=swap');
+/* fonts
+
+    font-family: 'Lato', sans-serif;
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+    
+    font-family: 'Roboto Condensed', sans-serif;
+
+    font-family: 'Ubuntu', sans-serif;
+*/
+*
+{
+    box-sizing:border-box;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+body
+{
+    max-width: 100%;
+    background-color: #040404;
+    overflow-x: hidden;
+}
+
+
+.image1 img
+  {
+    position: fixed;
+    width: 470px;
+    height: 820px;
+    bottom: 0rem;
+    left: 45rem;
+    z-index: -1;
+   
+  }
+
+
+
+/* nav bar*/
+header {
+  position: absolute;
+  margin-top: 12rem;
+  margin-left: 4.5rem;
+}
+
+nav
+{
+  position: relative;
+  right: 2.5rem;
+}
+
+ .nav-container ul li 
+{
+    list-style: none;
+    display: inline-block;
+    padding-right: 1.5rem;
+}
+.nav-container ul li a:focus,
+.nav-container ul li a:active {
+  border-bottom: 3px solid #18d26e !important;
+  color: #18d26e !important; 
+  transition: all 0.3s ease;
+
+}
+
+ .nav-container ul li a:visited,
+ .nav-container ul li a
+{
+    text-decoration: none;
+    font-size:medium;
+    font-weight:bold;
+    color: #bcbcbc;
+    position: relative;
+    transition: all 0.5s ease;    
+}
+ .nav-container ul li a:hover{
+    color: #18d26e;
+    padding-bottom: 10px;
+    transition: all 0.5s ease;
+  
+}
+
+   .nav-container ul li a:hover:before {
+    width: 100%;
+    transform: scaleX(1);
+  }
+   .nav-container ul li a:before {
+    content: '';
+    position: absolute;
+    padding-bottom: 10px;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    border-bottom: 3px solid #18d26e;
+    transition: all 0.5s ease;
+  }
+/* ------ End of Nav bar ------*/
+
+  /* name and sub header*/
+ 
+  header a h1
+  {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+  }
+  header a
+  {
+    text-decoration: none;
+  }
+  
+  header h2
+  { 
+    font-family: 'Lato', sans-serif;
+    color: #bcbcbc;
+    margin-top: -1.5rem;
+
+  }
+  header h2 span
+  {
+    font-family: 'Lato', sans-serif;
+    color: #18d26e;
+  }
+header h3
+{
+    font-family: 'Lato', sans-serif;
+    color: #bcbcbc;
+    margin-top: -1rem ;
+   
+}
+header h3 span{
+    color: #18d26e;
+}
+
+/*======== Sections ===========*/
+.projects
+{
+  display: none;
+}
+
+.project-container
+{
+  margin-top: 50rem;
+}
+  
+
+/*======== Su icon ==========*/
+
+.gg-sun {
+  box-sizing: border-box;
+  position: absolute;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 24px;
+  height: 24px;
+  background:
+  linear-gradient(to bottom,
+  currentColor 4px,transparent 0)
+  no-repeat 5px -6px/2px 6px,
+  linear-gradient(to bottom,
+  currentColor 4px,transparent 0)
+  no-repeat 5px 14px/2px 6px,
+  linear-gradient(to bottom,
+  currentColor 4px,transparent 0)
+  no-repeat -8px 5px/6px 2px,
+  linear-gradient(to bottom,
+  currentColor 4px,transparent 0)
+  no-repeat 14px 5px/6px 2px;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 2px;
+  border: 6px solid transparent
+ }
+ 
+ .gg-sun::after,
+ .gg-sun::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  border-right: 4px solid;
+  border-left: 4px solid;
+  left: -6px;
+  top: 5px
+ }
+ 
+ .gg-sun::before {
+  transform: rotate(-45deg)
+ }
+ 
+ .gg-sun::after {
+  transform: rotate(45deg)
+ } 
+ .sun-moon-pos          /*============ Icon positions =============*/
+ {
+  margin-top: 1rem;
+  margin-left: 76rem;
+  opacity: 0.5;
+ }
+ .sunpos:hover
+ {
+  color: gold;
+ }
+
+  /*========== Moon icon ===========*/
+
+  .gg-moon,
+  .gg-moon::after {
+   display: block;
+   box-sizing: border-box;
+   border-radius: 50%
+  }
+  
+  .gg-moon {
+   overflow: hidden;
+   position: absolute;
+   transform: rotate(-135deg) scale(var(--ggs,1));
+   width: 20px;
+   height: 20px;
+   border: 2px solid;
+   border-bottom-color: transparent;
+   display: noe;
+  }
+  
+  .gg-moon::after {
+   content: "";
+   position: absolute;
+   width: 12px;
+   height: 18px;
+   border: 2px solid transparent;
+   box-shadow: 0 0 0 2px;
+   top: 8px;
+   left: 2px
+  } 
+  /*==============navburger=====================*/
+  /* Hamburger Menu Styles */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 2s;
+  left: 20rem;
+  top: -5rem;
+  animation: fade-in 0.5s backwards ;
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+.nav-container ul.show {
+  display: flex;
+  position: absolute;
+  top: -3rem;
+  left: -1rem;
+  background-color: rgba(80, 74, 74, 0.5);
+  border-radius: 16px;
+  animation: fade-in 0.8s forward;
+  
+}
+.nav-container ul.show a
+{
+  font-size: small;
+  line-height: 2rem;
+}
+@keyframes fade-in {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  /* Hide the navigation menu by default */
+  .nav-container ul {
+    display: none;
+  }
+
+  /* Display the hamburger menu */
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+  @media only screen and (max-width: 480px) {
+    /* Adjust the styles for screens with a maximum width of 480px */
+    body 
+    {
+      overflow-y: hidden;
+    }
+    header {
+      margin-top: 10rem;
+      margin-left: 1rem;
+    }
+    
+    .image1 img {
+      position: absolute;
+      width: 500px;
+      height: 900px;
+      left: 2rem;
+     bottom: -5rem;
+    }
+    .nav-container
+    {
+      position: absolute;
+      bottom: 10rem;
+    }
+    .nav-container ul {
+      opacity: 0;
+      display: none;
+      position: absolute;
+      top: -3rem;
+      left: -1rem;
+      background-color: rgba(80, 74, 74, 0.5);
+      border-radius: 16px;
+      animation: fade-in 0.5s forwards;
+  }
+   
+     #name h1 {
+    font-size: 2rem; 
+    margin-bottom: 2rem;
+  }
+  #subheader2
+  {
+    font-size: medium; 
+    margin-bottom: 1rem;
+  }
+  #subheader3
+  {
+    font-size: medium;
+  }
+}
+   
+    /* media queries */
+  

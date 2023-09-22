@@ -1,0 +1,445 @@
+.contact-content
+{
+    overflow: hidden;
+}
+.upper-div
+{
+    display: flex;
+}
+
+.upper-forms
+{
+    display: flex;
+    gap: 19%
+}
+/*======== Contact ===========*/
+
+
+.contact-content h3
+{
+    margin-left: 7rem;
+    border-bottom: 1.5px solid #bcbcbc;
+    padding-right: 6rem;
+    padding-bottom: 0.5rem;
+    margin-top:7rem;
+    margin-right: 62rem;
+    color: #18d26e;
+    font-size: 2rem;
+    
+}
+
+.contact-content h3:hover
+{
+  font-size: 2.5rem;
+  transition: 0.5s ease-in-out;
+  margin-right: 60rem;
+  cursor: default;
+}
+.contact-content h3:hover{
+  color: #bcbcbc;
+  border-bottom: 1.5px solid #18d26e;
+}
+
+.location
+{
+  margin-left:7rem;
+  border-radius: 12px;
+  padding: 1rem;
+  padding-right: 12rem;
+  background-color: rgba(45, 44, 44, 0.5); /* Using rgba instead of opacity */
+}
+.location:hover
+{
+  background-color: rgba(75, 70, 70, 0.5);
+  transition: 0.3s ease-in-out;
+  cursor: default;
+}
+.location p
+{
+    margin-left: 2rem;
+   
+}
+
+.location h2
+{
+    margin-left: 3rem;
+    font-size: larger;
+    color: #18d26e;
+}
+.location img
+{
+    position: absolute;
+    margin-top: 0.7rem;
+    height: 30px;
+    width: 30px;
+}
+.social-media
+{
+    display: inline-flex;
+    margin-left: 3rem;
+    background-color: rgba(45, 44, 44, 0.5);
+    padding: 1rem;
+    border-radius: 12px;
+}
+.social-media:hover{
+  background-color: rgba(75, 70, 70, 0.5);
+  transition: 0.3s ease-in-out;
+  cursor: default;
+}
+.social-media h2
+{
+    margin-left: 2rem;
+    font-size: larger;
+    color: #18d26e;
+}
+
+
+.share-pos /*============= this controls the position ============*/
+{
+ margin-top: 1.5rem;
+ margin-left: rem;
+}
+
+.facebook-icon
+{
+    margin-top: 4rem;
+    margin-left: -8rem;
+}
+.facebook-icon a:hover
+{
+    color: #18d26e;
+    transition: 0.5s ease;
+}
+.instagram-icon
+{
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 26rem;
+}
+.instagram-icon a:hover
+{
+    color: #18d26e;
+    transition: 0.5s ease;
+}
+
+
+.github-sign,
+.github-sign a
+{
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    font-size: large;
+}
+
+.github-sign a:hover
+{
+    color: #18d26e;
+    transition: 0.5s ease;
+}
+
+/*==========lower part of the contact info ===============*/
+.lower-div
+{
+    display: flex;
+}
+
+.email
+{
+    background-color: rgba(45, 44, 44, 0.5);
+    padding: 1rem;
+    border-radius: 12px;
+    margin-left: 7rem;
+    margin-top: 2rem;
+}
+.email:hover
+{
+  background-color: rgba(75, 70, 70, 0.5);
+  transition: 0.3s ease-in-out;
+  cursor:default;
+}
+.mail-pos
+{
+    margin-top: 1.2rem;
+    color: #18d26e;
+}
+
+.lower-div .email h2
+{
+    margin-left: 2rem;
+    font-size: larger;
+    color: #18d26e;
+}
+.lower-div .email p
+{
+    margin-left: 2rem;
+    padding-right: 14rem;
+}
+.lower-div .email p:hover{
+  color: #18d26e;
+  transition: 0.3s ease-in-out;
+  font-size: large;
+  margin-right: -1.4rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+/*========= Phone num ========*/
+.phoneNumPad
+{
+    background-color: rgba(45, 44, 44, 0.5);
+    padding: 1rem;
+    border-radius: 12px;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    padding-right: 15.5rem;
+  
+}
+.phoneNumPad:hover
+{
+  background-color: rgba(75, 70, 70, 0.5);
+  transition: 0.3s ease-in-out;
+  cursor:default;
+}
+
+.phone-pos
+{
+    margin-top: 1.1rem;
+}
+.lower-div .phoneNumPad h2
+{
+    font-size: larger;
+    margin-left: 2rem;
+    color: #18d26e;
+}
+.lower-div .phoneNumPad pre{
+    margin-left: 2rem;
+}
+.lower-div .phoneNumPad pre:hover
+{
+  color: #18d26e;
+  transition: 0.3s ease-in-out;
+  font-size: large;
+  margin-right: -1.9rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+
+/*maybe add hover effect on the tabs*/
+
+/*================= Contact Form ==================*/
+
+.contact-form
+{
+    display: flex;
+    background-color: rgba(42, 40, 40, 0.5);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-left: 7rem;
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+    margin-right: 6.5rem;
+}
+
+.form-name .input-wrapper {
+    position: relative;
+    display: flx;
+  }
+  
+  
+  .form-name input[type="text"] {
+    padding-top: 1.5em;
+    background-color: rgba(45, 44, 44, 0.5);
+    border: none;
+    border-radius: 12px;
+    width: 164%;
+    color: #fff;
+    outline: none;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+   
+    
+  }
+  .form-name input[type="text"]:hover{
+    background-color: rgba(75, 70, 70, 0.5);
+    transition: 0.3s ease-in-out;
+  }
+  
+  .form-name input[type="text"].filled + label,
+  .form-name input[type="text"]:focus + label {
+    display: none;
+  }
+  
+  .form-name label {
+    position: absolute;
+    top: unset;
+    bottom: 0.5em; /* Adjust the vertical position of the label */
+    left: 1em;
+    pointer-events: none;
+    color: #888;
+
+  }
+
+  /*============== email form ===============*/
+
+  .email-form .email-wrapper {
+    position: relative;
+    margin-left: 3rem;
+  }
+  
+  .email-form input[type="email"] {
+    padding-top: 1.5em;
+    background-color: rgba(45, 44, 44, 0.5);
+    border: none;
+    border-radius: 12px;
+    width:173% ;
+    color: #fff;
+    outline: none;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    
+  }
+  .email-form input[type="email"]:hover{
+    background-color: rgba(75, 70, 70, 0.5);
+    transition: 0.3s ease-in-out;
+  }
+  
+  
+  .email-form input[type="email"]:valid + label,
+  .email-form input[type="email"]:focus + label {
+    display: none;
+  }
+  
+  .email-form label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1em;
+    pointer-events: none;
+    color: #888;
+  }
+  
+  /*======= subject form ===========*/
+  .subject-form .subject-wrapper {
+    position: relative;
+  }
+  
+  .subject-form input[type="text"] {
+    margin-top: 2rem;
+    margin-left: 25%;
+    padding-top: 1.5em;
+    background-color: rgba(45, 44, 44, 0.5);
+    border: none;
+    border-radius: 12px;
+    width: 55%;
+    color: #fff;
+    outline: none;
+    height: 50px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+   
+  }
+  .subject-form input[type="text"]:hover{
+    background-color: rgba(75, 70, 70, 0.5);
+    transition: 0.3s ease-in-out;
+  } 
+  
+   
+  .form-name input[type="text"].filled + label,
+  .subject-form input[type="text"]:focus + label {
+    display: none;
+  }
+  
+  
+  .subject-form label {
+    position: absolute;
+    margin-top: 1em;
+    margin-left: 25%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1em;
+    pointer-events: none;
+    color: #888;
+  }
+  
+  /*================ Message area ===============*/
+
+  .message-area .message-wrapper {
+    position: relative;
+  }
+  
+  .message-area input[type="text"] {
+    margin-top: 2rem;
+    margin-left: 5%;
+    padding-top: 1.5em;
+    background-color: rgba(45, 44, 44, 0.5);
+    border: none;
+    border-radius: 12px;
+    padding-right: 42.5rem;
+    color: #fff;
+    outline: none;
+    height: 200px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+  .message-area input[type="text"]:hover{
+    background-color: rgba(75, 70, 70, 0.5);
+    transition: 0.3s ease-in-out;
+  }
+  
+  .message-area input[type="text"].filled + label,
+  .message-area input[type="text"]:focus + label {
+    display: none;
+  }
+  
+  .message-area label {
+    position: absolute;
+    margin-top: 1em;
+    margin-left: 45%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1em;
+    pointer-events: none;
+    color: #888;
+  }
+
+  /*==========submit form ======*/  
+  .submitbtn
+  {
+    color: #18d26e;
+    background-color: rgba(80, 74, 74, 0.5);
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-weight: bolder;
+    margin-left: 43%;
+    margin-top: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: larger;
+  }
+  .submitbtn:hover
+  {
+    background-color: #18d26e;
+    color: white;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  footer
+  {
+    padding: 3rem;
+  }
+  
+  
+
+  
+  

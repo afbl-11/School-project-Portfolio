@@ -1,0 +1,132 @@
+
+#credits
+{
+    margin-left: 7rem;
+    border-bottom: 1.5px solid #bcbcbc;
+    padding-right: 6rem;
+    padding-bottom: 0.5rem;
+    margin-top:7rem;
+    margin-right: 57rem;
+    color: #18d26e;
+    font-size: 2rem;
+}
+
+#credits:hover
+{
+  font-size: 2.5rem;
+  transition: 0.5s ease-in;
+  margin-right: 54rem;
+  cursor: default;
+  color: #bcbcbc;
+  border-bottom: 1.5px solid #18d26e;
+}
+
+p ,strong
+{
+    text-align: center;
+}
+.codingNepal
+{
+   position: relative;
+   display: flex;
+   left: 5rem;
+   top: 5rem;
+}
+
+img
+{
+   width: 400px;
+   height: 200px;
+   z-index: -1;
+}
+img:hover
+{
+    opacity: 0.8;
+}
+.Nepaldescription
+{
+    position: relative;
+   
+}
+.Nepaldescription pre,
+.Gfontsdescription pre,
+.cssggdescription pre
+{
+    letter-spacing: 1px;
+    line-height: 2;
+    font-size: 20px;
+}
+.Nepaldescription pre span,
+.Gfontsdescription pre span,
+.cssggdescription pre span
+{
+    color: #18d26e;
+}
+.googleFonts
+{
+    position: relative;
+    display: flex;
+    top: 10rem;
+    left: 2;
+}
+.Gfontsdescription
+{
+    position: relative;
+}
+#gfonts
+{
+    position: relative;
+    left: 3rem;
+}
+.cssgg
+{
+    position: relative;
+    display: flex;
+    left: 5rem;
+    top: 13rem;
+   
+}
+
+.cssggdescription
+{
+    position: relative;
+}
+footer
+{
+    padding: 20px;
+    text-align: center;
+    margin-top: 20rem;
+
+}
+@media (max-width: 768px) {
+    /* Styles for smaller screens */
+    #credits {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      font-size: 1.5rem;
+    }
+  
+    .codingNepal {
+      flex-direction: column;
+      align-items: center;
+      left: 0;
+      top: 0;
+      margin-top: 2rem;
+    }
+  
+    .googleFonts {
+      flex-direction: column;
+      align-items: center;
+      top: 0;
+      left: 0;
+      margin-top: 2rem;
+    }
+  
+    .cssgg {
+      flex-direction: column;
+      align-items: center;
+      left: 0;
+      top: 0;
+      margin-top: 2rem;
+    }
+  }
